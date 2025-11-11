@@ -1,0 +1,16 @@
+[
+  {
+    "username": "admin",
+    "password": "$2b$10$...",
+    "role": "admin",
+    "roles": ["admin"],
+    "banned": false
+  },
+  {
+    "username": "user1",
+    "password": "$2b$10$...",
+    "role": "user",
+    "roles": ["member"],
+    "banned": false
+  }
+]

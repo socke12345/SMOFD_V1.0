@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { padding: 20px; background: #f5f5f5; }
+  h2, h3 { color: #333; }
+  .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  input, select, button { margin: 5px; padding: 5px 10px; border-radius: 6px; border: 1px solid #ccc; }
+  button { background: #4caf50; color: white; border: none; cursor: pointer; transition: 0.3s; }
+  button:hover { background: #45a049; }
+  .role-item, .user-item { display: flex; align-items: center; margin: 5px 0; }
+  .role-badge { padding: 2px 8px; border-radius: 12px; color: white; margin-left: 5px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<!-- Rollen Verwaltung -->
+<div class="section">
+  <h3>Rollen verwalten</h3>
+  <input type="text" id="roleName" placeholder="Rollenname">
+  <input type="color" id="roleColor" value="#ff0000">
+  <button onclick="createRole()">Erstellen</button>
+
+  <div id="rolesList"></div>
+</div>
+
+<!-- Benutzerverwaltung -->
+<div class="section">
+  <h3>Benutzer verwalten</h3>
+  <select id="userSelect"></select>
+  <input type="text" id="newName" placeholder="Neuer Name">
+  <button onclick="renameUser()">Umbenennen</button>
+
+  <div id="usersList"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
